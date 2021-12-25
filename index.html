@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .do {
+            width: 200px;
+            height: 200px;
+            background: red;
+            animation: bw 10s;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            
+        }
+        .vang {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: 1s;
+            
+            
+        }
+        .do:hover .vang {
+            transform: translate(300px);
+            opacity: 0;
+        }
+        @keyframes bw {
+            0% { background: red;
+                   top: 0px;
+                   left: 0px;
+                   
+            }
+           
+            25% {
+               
+                top: 1300px;
+                left: 0px;
+            }
+            50% {
+               
+               top: 1300px;
+               left: 900px;
+           }
+           75% {
+               
+               top: 0px;
+               left: 900px;
+           }
+           100% {
+               
+               top: 0px;
+               left: 0px;
+           }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="do">
+        <div class="vang"></div>
+    </div>
+
+</body>
+</html>
